@@ -49,7 +49,7 @@ span h2{
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 220px;
+    margin-left: 200px;
 }
 
 #btn-info{
@@ -59,6 +59,7 @@ span h2{
     border-radius: 100%;
     background-color: black;
     padding-top:1px;
+    margin-left: 2px;
 }
 
 .section-buttons .btn-clear{
@@ -87,4 +88,8 @@ span h2{
 
 .btn-select{
     z-index: 99999;
+}
+
+.hidden{
+    display: none;
 }

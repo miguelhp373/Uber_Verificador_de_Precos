@@ -39,12 +39,13 @@
                         <br>
                         <form action="">
                             <div class="container">
-                                <input class="form-control input-location" type="text"
+                                <input class="form-control input-location" id="inputlocation" type="text"
                                     placeholder="Informe o Local de Partida">
                                 <br>
-                                <input class="form-control input-location" type="text"
+                                <input class="form-control input-location" id="inputtravel" type="text"
                                     placeholder="Inserir Local de Destino">
                             </div>
+                           <div class="hidden" id="price-visor">
                             <h2>Suas opções</h2>
                             <hr style="margin-top: -25px;">
                             <div class="container result-select">
@@ -54,7 +55,7 @@
                                 <div id="text-1">UberX</div>
                                 <div id="val-trip">
                                     <div id="text-2">
-                                        R$ 0,00
+                                        R$<span id="price-trip-info">0,00</span>
                                         <button type="button" class="btn btn-primary bg-faded" id="btn-info"
                                             data-toggle="modal" data-target="#exampleModal">
                                             <i class="fa fa-info" aria-hidden="true" style="font-size: 10px;"></i>
@@ -62,13 +63,14 @@
                                     </div>
                                 </div>
                             </div>
+                           </div>
                             <br>
                             <div class="conteiner section-buttons">
                                 <button type="button" class="btn btn-dark bg-faded btn-start"
-                                    id="btn-start">Calcular</button>
+                                    id="btn-start" onclick="start()">Calcular</button>
                                 <br>
 
-                                <button type="reset" class="btn btn-dark bg-faded btn-clear" id="btn-clear">Novo
+                                <button type="reset" class="btn btn-dark bg-faded btn-clear" id="btn-clear" onclick="reset()">Novo
                                     Calculo</button>
                             </div>
                         </form>
@@ -161,11 +163,13 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <script src="../Assets/API.js"></script>
     <script>
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
     </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
