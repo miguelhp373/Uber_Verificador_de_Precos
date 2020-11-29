@@ -37,7 +37,8 @@ span h2{
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 22px;
+    margin-top: -18px;
 }
 
 #val-trip{
@@ -57,7 +58,7 @@ span h2{
     height: 24px;
     border-radius: 100%;
     background-color: black;
-    padding-top: 2px;
+    padding-top:1px;
 }
 
 .section-buttons .btn-clear{
@@ -82,4 +83,8 @@ span h2{
 #btn-clear:hover{
     background-color: rgb(212, 204, 204);
     color: black;
+}
+
+.btn-select{
+    z-index: 99999;
 }
