@@ -1,8 +1,6 @@
 document.getElementById("map-visor").innerHTML = `
-<img src="../images/map-ficticious.png" id="app-image" alt="app Image">`
+<img src="../Assets/images/map-ficticious.png" id="app-image" alt="app Image">`
 ///////////////////////////////////////////////////////////////////////////
-
-
 function start() {
     const origin = document.getElementById("inputlocation").value
     const destiny = document.getElementById("inputtravel").value
