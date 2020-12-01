@@ -21,7 +21,6 @@
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-
 <body>
     <nav class="navbar navbar-dark bg-faded" style="background-color:black;">
         <a class="navbar-brand" href="#">
@@ -40,11 +39,17 @@
                         <form action="">
                             <div class="container">
                                 <input class="form-control input-location" id="inputlocation" type="text"
-                                    placeholder="Informe o Local de Partida">
+                                    placeholder="Informe o Local de Partida" autofocus>
                                 <br>
                                 <input class="form-control input-location" id="inputtravel" type="text"
                                     placeholder="Inserir Local de Destino">
                             </div>
+
+                            <br><br>
+                            <div id="price-input" class="hidden-2">
+                             <!--Aqui Vai os Inputs de KM e Time-->   
+                            </div>
+                            
                            <div class="hidden" id="price-visor">
                             <h2>Suas opções</h2>
                             <hr style="margin-top: -25px;">
@@ -53,24 +58,26 @@
                                     <input type="radio" class="btn-select" name="uberX">
                                 </div>
                                 <div id="text-1">UberX</div>
-                                <div id="val-trip">
+                                <div id="val-trip"  class="justify-content-end">
                                     <div id="text-2">
                                         R$<span id="price-trip-info">0,00</span>
                                         <button type="button" class="btn btn-primary bg-faded" id="btn-info"
                                             data-toggle="modal" data-target="#exampleModal">
                                             <i class="fa fa-info" aria-hidden="true" style="font-size: 10px;"></i>
                                         </button>
+                                        
                                     </div>
                                 </div>
                             </div>
+                            
                            </div>
                             <br>
                             <div class="conteiner section-buttons">
                                 <button type="button" class="btn btn-dark bg-faded btn-start"
-                                    id="btn-start" onclick="start()">Calcular</button>
+                                    id="btn-start" onclick="start()">Buscar</button>
                                 <br>
 
-                                <button type="reset" class="btn btn-dark bg-faded btn-clear" id="btn-clear" onclick="reset()">Novo
+                                <button type="button" class="btn btn-dark bg-faded btn-clear" id="btn-clear" onclick="reset()">Novo
                                     Calculo</button>
                             </div>
                         </form>
@@ -79,18 +86,23 @@
                 <br>
                 <br>
                 <div class="col-sm-8 map-app">
-                    <span>
-                        <img src="../images/map-ficticious.png" id="app-image" alt="app Image">
-                    </span>
+                    <br> 
+                    <div id="map-visor">
+                        
+                        <!--Aqui Mostra A Imagem ou mapa -->  
+                 
+                    </div>    
+                    </div>
                 </div>
             </div>
     </main>
     <br>
-    <br>
+<br>
+<br>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col" style="margin-left: -25px;">
+                <div class="col"  style="margin-left: -25px;">
                     <a href="">
                         <img src="../images/Logo/Uber_Logo_White_RGB.svg" width="100" height="50" alt="LOGO" loading="lazy">
                     </a>
@@ -102,7 +114,6 @@
                     © 2020 Uber Technologies Inc.
                 </div>
             </div>
-            
         </div>
     </footer>
 
