@@ -19,7 +19,8 @@
     * API do Google Implantada, Mas Não Funcionando Do Jeito Correto;
 * 1.0.1
     * Em Andamento
-    * Implantar A API da MAPBOX
+    * Implantar A API da MAPBOX 
+    * <a href="https://docs.mapbox.com/mapbox-gl-js/api/">MapBox API</a>
 ***
 # 📝 License
 
